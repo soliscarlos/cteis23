@@ -1,3 +1,14 @@
+const menuIcono = document.getElementById('menu-icono');
+const menuLateral = document.getElementById('menu-lateral');
+const cerrarMenu = document.getElementById('cerrar-menu');
+
+menuIcono.addEventListener('click', () => {
+  menuLateral.classList.add('abierto');
+});
+
+cerrarMenu.addEventListener('click', () => {
+  menuLateral.classList.remove('abierto');
+});
 En// Animación suave al hacer clic en los enlaces de navegación
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
