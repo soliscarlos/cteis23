@@ -1,9 +1,43 @@
+.menu-lateral h2{
+    color: #333
+}
+.menu-lateral ul {
+  list-style-type: none; /* Quitar viñetas */
+  padding: 0;
+  margin: 0;
+}
+
+.menu-lateral ul li {
+  margin-bottom: 10px; /* Espaciado entre elementos */
+}
+
+.menu-lateral ul li a {
+  text-decoration: none; /* Quitar subrayado */
+  color: #ffffff; /* Color de texto claro */
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 4px; /* Bordes redondeados para enlaces */
+  transition: background-color 0.3s ease; /* Transición suave para hover */
+}
+
+.menu-lateral ul li a:hover {
+  background-color: #580202; /* Color de fondo al pasar el mouse */
+  color: #ffffff; /* Texto blanco en hover */
+}
+
 /* ICONO MENÚ */
 .menu-icono {
-  font-size: 2rem;
+  font-size: 3rem; /*tamañno del icono*/
   cursor: pointer;
   user-select: none;
+  transition: background-color 0.3s ease;
 }
+.menu-icono:hover {
+  background-color: #580202; /* Color de fondo al pasar el mouse */
+  color: #fff; /* Texto blanco en hover */
+}
+
 
 /* MENÚ LATERAL */
 .menu-lateral {
@@ -12,10 +46,10 @@
   left:-250px; /* oculto */
   width: 250px;
   height: 100%;
-  background-color: #353b48;
-  color: #fff;
+  background: linear-gradient(135deg, #ffd900bd 0%,#5E2129, #b21515 100%);
+  color: #ffffff;
   padding: 1.5rem;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
   transition: left 0.3s ease;
   z-index: 1000;
 }
